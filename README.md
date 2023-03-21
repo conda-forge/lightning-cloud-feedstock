@@ -3,7 +3,7 @@ About lightning-cloud-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightning-cloud-feedstock/blob/main/LICENSE.txt)
 
-Home: https://lightning.ai
+Home: https://github.com/Lightning-AI/lightning
 
 Package license: Apache-2.0
 
