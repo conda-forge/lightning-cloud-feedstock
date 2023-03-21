@@ -42,7 +42,7 @@ test:
     - pip
 
 about:
-  home: https://lightning.ai
+  home: https://github.com/Lightning-AI/lightning
   summary: Lightning Cloud
   license: Apache-2.0
   license_file: LICENSE
