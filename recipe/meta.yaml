@@ -1,5 +1,5 @@
 {% set name = "lightning-cloud" %}
-{% set version = "0.5.47" %}
+{% set version = "0.5.49" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning_cloud-{{ version }}.tar.gz
-  sha256: bd56e443189d273c561bb069ae1b5296541425068b6c6a2afcb89b13b26999a4
+  sha256: e495d5ce5e1a45510771fa8117495ba3f3682f697a046f9269d762b12c1f16da
 
 build:
   entry_points:
