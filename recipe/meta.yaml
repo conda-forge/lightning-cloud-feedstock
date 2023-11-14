@@ -38,6 +38,7 @@ test:
   imports:
     - lightning_cloud
   commands:
+    - curl https://raw.githubusercontent.com/Lightning-AI/lightning/master/requirements/collect_env_details.py | python
     - pip check
     - lightning_cloud --help
   requires:
