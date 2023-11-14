@@ -43,6 +43,7 @@ test:
     - lightning_cloud --help
   requires:
     - pip
+    - pytorch
 
 about:
   home: https://github.com/Lightning-AI/lightning
