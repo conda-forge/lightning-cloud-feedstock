@@ -21,10 +21,10 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - protobuf
     - boto3
     - click
     - fastapi
+    - protobuf
     - pyjwt
     - python >=3.7
     - python-multipart
