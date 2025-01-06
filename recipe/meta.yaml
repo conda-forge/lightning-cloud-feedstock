@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning_cloud-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lightning_cloud-{{ version }}.tar.gz
   sha256: 026a459f9b4f555439d291c5b1b5a5412173d5546dddf3f95fc6f9eb0f3fbd87
 
 build:
@@ -14,19 +14,19 @@ build:
     - lightning_cloud=lightning_cloud.cli.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - boto3
     - click
     - fastapi
     - protobuf
     - pyjwt
-    - python >=3.7
+    - python >={{ python_min }}
     - python-multipart
     - requests
     - rich
@@ -43,6 +43,7 @@ test:
     - lightning_cloud --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Lightning-AI/lightning
