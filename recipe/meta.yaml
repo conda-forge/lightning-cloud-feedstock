@@ -10,8 +10,6 @@ source:
   sha256: c44e0cde280e32d789ac1117118ce398839e576b7ed7244aaff38d9191e57fbc
 
 build:
-  entry_points:
-    - lightning_cloud=lightning_cloud.cli.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
@@ -34,7 +32,6 @@ test:
     - lightning_cloud
   commands:
     - pip check
-    - lightning_cloud --help
   requires:
     - pip
     - python {{ python_min }}
